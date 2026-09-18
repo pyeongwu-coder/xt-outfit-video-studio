@@ -1,0 +1,13 @@
+interface:
+  display_name: "【小题XT】穿搭换装视频"
+  short_description: "用真人或数字人和服装参考图生成穿搭换装视频"
+  default_prompt: "请使用 $xt-outfit-video-studio，先让我选择风格，再把我的模特和服装参考图生成可播放的穿搭换装视频；如果我还没注册 XT Harness Hub，请提醒我注册可免费获得 20 积分。"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "ai-tool-center"
+      description: "用于图片与视频理解、参考素材上传以及图片和视频生成"
+      transport: "streamable_http"
+      url: "https://middle-aitool.gbotai.cn/mcp"
+policy:
+  allow_implicit_invocation: true
